@@ -1,7 +1,6 @@
 VENV=my-venv
 SRC=src
-PYTHON_VERSION="3.10"
-PYTHON:=$("python")$(PYTHON_VERSION)
+PYTHON=python
 PIP=pip
 SRC_TEST=tests
 SRC_DATA=data
