@@ -1,6 +1,7 @@
 VENV=my-venv
 SRC=src
-PYTHON=python
+PYTHON_VERSION="3.10"
+PYTHON:=$("python")$(PYTHON_VERSION)
 PIP=pip
 SRC_TEST=tests
 SRC_DATA=data
@@ -10,7 +11,7 @@ default:
 	@$(PYTHON) $(SRC)/app.py
 
 create-venv:
-	@python -m venv $(VENV)
+	@$(PYTHON) -m venv $(VENV)
 
 install:
 	@$(PIP) install -r requirements.txt

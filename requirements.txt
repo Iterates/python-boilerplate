@@ -1,2 +1,1 @@
-black==23.9.1
-jupytext==1.15.1
+coverage==7.4.0
